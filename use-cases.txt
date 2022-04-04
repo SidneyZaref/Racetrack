@@ -1,0 +1,135 @@
+Add Competition
+Goal level: sea level
+
+MSS:
+1. club organizer starts up the app
+2. the app responds with an option button (add/remove, save, quit)
+3. club organizer chooses to add a competition
+4. app responds by asking for competition details (title, race distance, etc)
+5. club organizer enters info
+6. app states the info has been added and presents prompt again
+--------------------------------------
+Extension/Variant Scenario #1
+3a. the competition entered by the organizer already exists
+    in the competition database
+3b. the app responds, "duplicate competition!"
+3c. the app then takes you back to step 2 in MSS without the
+    competition getting added
+
+Extension/Variant Scenario #2
+3a. club organizer types an erroneous command
+3b. the app responds "Invalid Command" Msg
+2. reconnects at MSS step 2
+
+------------------------------------------------------------------------------------------
+Remove Competition:
+Goal Level: ???
+
+MSS:
+1. the club organizer starts up the app
+2. the app responds with an option button (add/remove, save, quit)
+3. club organizer chooses to remove a competition
+4. app responds by asking which competition they would like to remove (title/name)
+4. club organizer eners title/name of race they would like to remove
+5. app states "are you sure you would like to delete this competition"
+6. organizer either response yes or no
+7. app states "competition has been deleted" (if organizer answered yes) and presents
+    propt again without competition being deleted (only if response is no)
+
+______________________________________
+Extension/Variant Scenario #1
+3a. the competition that the organizer wants to remove is already removed
+3b. the app responds " this competition has already been removed"
+3c. the app then takes you back to step 2 in MSS
+
+Extension/Variant #2
+5a. organizer types an erroneous command instead of yes or no
+5b. app responds with "Invalid Command" Msg
+5c. reconnects at MSS step 5
+
+------------------------------------------------------------------------------------------
+List Competitions
+Goal Level: ???
+
+MSS:
+1. the club organizer starts up the app
+2. the app responds with an option button (add/remove, save, quit, List all, list by year)
+3. club organizer chooses to list all
+4. app responds by listing all competitions and presents prompt again
+
+--------------------------------------
+Extension/Variant Scenario #1
+2a. the organizer responds with list by year instead of list all
+2b. organizer has to repeat from the beginning
+
+2c. organizer types erroneous command
+2d. app responds with "Invalid Command"
+2e. app takes them back to the prompt
+
+
+------------------------------------------------------------------------------------------
+List by Year
+Goal Level: ???
+
+MSS:
+1. the club organzier starts up the app
+2. the app repsonds with an option button (add/remove. save, quit, list all, list by year)
+3. organizer chooses to list by year
+4. app responds by asking "Oldest to most recent" or "Most recent to oldest" or "Quit"
+5. organizer enters whichever of their choosing (if choosing quit send back to prompt)
+6. app responds with a list of all competitions in either the oldest to the most recent or vice versa
+
+--------------------------------------
+Extension/Variant Scenario #1
+2a. the organizer responds with list all instead of list by year
+2b. organzier then chooses quit
+2c. app presents the prompt again
+
+
+Extension/Variant Scenario #2
+4a. organzier responds with an answer they did not mean to click
+4b. app responds with the list of competitions and returns to the prompt
+
+Extension/Variant Scenario #3
+2a/4a. club organizer responds with erroneous command
+2b/4b. the app responds with "Invalid Command" Msg
+2c/4c. reconects at step 2/presents prompt
+
+------------------------------------------------------------------------------------------
+Save
+Goal Level: ???
+
+MSS:
+1. club organizer starts up the app
+2. app responds with an option button (add/remove, save, quit, etc.)
+3. organizer chooses "save"
+4. app then responds "are you sure you want to save"
+5. organizer then responds "yes" or "no"
+6. if organizer selects yes: then app saves the app progress and returns to prompt/step 2
+6.1. app will respond with "Save as: "
+6.2. organizer can enter file/app name and save
+7. if organizer selects no: then app does not save and returns to prompt/step 2
+8. app returns to prompt/step 2
+
+--------------------------------------
+Extension/Variant Scenario #1
+2a. club organizer responds with erroneous command
+2b. the app responds with "Invalid Command" Msg
+2c. reconects at step 2/presents prompt
+
+Extension/Variant Scenario #2
+6a. organizer did not make any changes
+6b. app rsponds "Did not make any changes!"
+6c. app presents prompt/step 2
+
+
+------------------------------------------------------------------------------------------
+Quit
+Goal level: ???
+
+MSS:
+1. club organizer starts up the app
+2. the app responds with an option button (add/remove, save, quit)
+3. club organizer chooses to quit
+4. app responds "are you sure you want to quit?"
+5. club organizer responds either "yes" or "no" and returns to prompt/step2
